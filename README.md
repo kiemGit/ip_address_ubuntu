@@ -2,7 +2,7 @@
 setting ip address ubuntu server
 
 # copy script bellow
-sudo nano /etc/netplan/00-installer-config.yaml
+  +sudo nano /etc/netplan/00-installer-config.yaml
 
 # input file [00-installer-config.yaml] as below
 network:
