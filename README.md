@@ -30,3 +30,17 @@ cara 2
           nameservers:
             addresses: [192.168.0.6]
       version: 2
+
+for ubuntu 25.04 
+# create file [/etc/netplan/01-netcfg.yaml]
+    network:
+      version: 2
+      renderer: networkd
+      ethernets:
+       enp2s0:
+        dhcp4: false
+        addresses:
+          - 192.168.0.4/24
+        gateway4: 192.168.0.6
+        nameservers:
+          addresses: [192.168.0.6]
